@@ -5,6 +5,8 @@
 // @description  Makes the variable bar sticky in view and edit screens
 // @author       Darshan Pandhi
 // @match        https://grafana.au-infrastructure.com/*
+// @match        https://grafana.common.au-tools.com/*
+// @match        https://grafana.tools.tmc79.cn/*
 // @require      https://gist.github.com/raw/2625891/waitForKeyElements.js
 // @grant        GM_addStyle
 // @run-at       document-idle
