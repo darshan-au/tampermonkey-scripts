@@ -16,11 +16,12 @@
 
 function fixedVariables() {
     var viewVarwrap = document.getElementsByClassName('submenu-controls');
-    var viewDashboardwrap = document.getElementsByClassName('dashboard-scroll');
+//    var viewDashboardwrap = document.getElementsByClassName('dashboard-scroll'); // Broke after grafana upgrade
     viewVarwrap[0].style.position = "fixed";
     viewVarwrap[0].style.zIndex = 100;
     viewVarwrap[0].style.top = "52px";
-    viewDashboardwrap[0].style.paddingTop = "50px";
+//    viewDashboardwrap[0].style.paddingTop = "50px";
+    viewVarwrap[0].parentElement.parentElement.lastElementChild.style.paddingTop = "50px";
 }
 
 waitForKeyElements(".submenu-controls", fixedVariables);
