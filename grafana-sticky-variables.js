@@ -19,6 +19,8 @@ function fixedVariables() {
     var viewVarwrap = document.getElementsByClassName('submenu-controls');
 //    var viewDashboardwrap = document.getElementsByClassName('dashboard-scroll'); // Broke after grafana upgrade
     viewVarwrap[0].style.position = "fixed";
+    viewVarwrap[0].style.display = "flex";
+    viewVarwrap[0].style.flexWrap = "wrap";
     viewVarwrap[0].style.zIndex = 100;
     viewVarwrap[0].style.top = "52px";
     viewVarwrap[0].style.width = "100%";
@@ -28,3 +30,4 @@ function fixedVariables() {
 }
 
 waitForKeyElements(".submenu-controls", fixedVariables);
+
