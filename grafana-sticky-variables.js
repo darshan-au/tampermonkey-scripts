@@ -23,11 +23,10 @@ function fixedVariables() {
     viewVarwrap[0].style.flexWrap = "wrap";
     viewVarwrap[0].style.zIndex = 100;
     viewVarwrap[0].style.top = "52px";
-    viewVarwrap[0].style.width = "100%";
+    viewVarwrap[0].style.width = "95%";
     viewVarwrap[0].style.backgroundColor = bgColor;
 //    viewDashboardwrap[0].style.paddingTop = "50px";
     viewVarwrap[0].parentElement.parentElement.lastElementChild.style.paddingTop = viewVarwrap[0].clientHeight+"px";
 }
 
 waitForKeyElements(".submenu-controls", fixedVariables);
-
