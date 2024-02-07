@@ -52,7 +52,7 @@ GM_addStyle(`
 
 GM_addStyle(`
   div.react-grid-layout {
-    margin-top: 80px;
+    margin-top: 120px;
   }
 `);
 
